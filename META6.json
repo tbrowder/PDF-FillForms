@@ -1,0 +1,25 @@
+{
+  "auth": "zef:tbrowder",
+  "authors": [
+    "Tom Browder"
+  ],
+  "build-depends": [
+  ],
+  "depends": [
+  ],
+  "description": "Provides a process to scan to PDF and overlay it with your own content",
+  "license": "Artistic-2.0",
+  "name": "PDF::FillForms",
+  "perl": "6.d",
+  "provides": {
+    "PDF::FillForms": "lib/PDF/FillForms.rakumod"
+  },
+  "resources": [
+  ],
+  "source-url": "",
+  "tags": [
+  ],
+  "test-depends": [
+  ],
+  "version": "0.0.1"
+}

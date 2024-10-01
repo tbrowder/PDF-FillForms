@@ -24,7 +24,19 @@ formatted text data file.
 
 =head1 DESCRIPTION
 
-B<PDF::FillForms> is ...
+B<PDF::FillForms> provides a way to use a PDF scan of any document
+and overlay it with user-defined text. It requires the user to provide
+specific data for the content and placement. It can use either Letter
+or A4 media.
+
+Currently, only one-page forms are handled, but file an
+issue if you need multi-page forms.
+
+First, the user must print the desired form and measure the pertinent X/Y
+dimensions for starting points of text blocks and desired text content.
+Use PostScript points (72 points per inch) for all dimensions. The
+page data description assumes a two-dimensional graph with its
+X/Y origin at the lower-left corner of the page.
 
 =head1 AUTHOR
 

@@ -1,3 +1,5 @@
+[![Actions Status](https://github.com/tbrowder/PDF-FillForms/actions/workflows/linux.yml/badge.svg)](https://github.com/tbrowder/PDF-FillForms/actions) [![Actions Status](https://github.com/tbrowder/PDF-FillForms/actions/workflows/macos.yml/badge.svg)](https://github.com/tbrowder/PDF-FillForms/actions) [![Actions Status](https://github.com/tbrowder/PDF-FillForms/actions/workflows/windows.yml/badge.svg)](https://github.com/tbrowder/PDF-FillForms/actions)
+
 NAME
 ====
 
@@ -7,7 +9,19 @@ SYNOPSIS
 ========
 
 ```raku
-use PDF::FillForms;
+$ ./fill-forms
+# OUTPUT:
+Usage: fill-form form=F in=I out=O
+
+With the form PDF file 'F' and input data file 'I', the 
+desired overlay text is combined with the form data to 
+produce the combination as the output PDF file 'O'.
+
+The 'form' file must be a scanned PDF file, and the 
+'input' file contains formatted data for the overlay.
+
+See the README for instructions on creating the 
+formatted text data file.
 ```
 
 DESCRIPTION

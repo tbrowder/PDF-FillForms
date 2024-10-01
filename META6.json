@@ -6,17 +6,20 @@
   "build-depends": [
   ],
   "depends": [
+    "MacOS::NativeLib",
+    "PDF::Lite"
   ],
   "description": "Provides a process to scan to PDF and overlay it with your own content",
   "license": "Artistic-2.0",
   "name": "PDF::FillForms",
   "perl": "6.d",
   "provides": {
-    "PDF::FillForms": "lib/PDF/FillForms.rakumod"
+    "PDF::FillForms": "lib/PDF/FillForms.rakumod",
+    "PDF::FreeFonts": "lib/PDF/FreeFonts.rakumod"
   },
   "resources": [
   ],
-  "source-url": "",
+  "source-url": "https://github.com/tbrowder/PDF-FillForms.git",
   "tags": [
   ],
   "test-depends": [

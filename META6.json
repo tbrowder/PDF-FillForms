@@ -15,7 +15,9 @@
   "perl": "6.d",
   "provides": {
     "PDF::FillForms": "lib/PDF/FillForms.rakumod",
-    "PDF::FreeFonts": "lib/PDF/FreeFonts.rakumod"
+    "PDF::FillForms::Class": "lib/PDF/FillForms/Class.rakumod",
+    "PDF::FillForms::Data": "lib/PDF/FillForms/Data.rakumod",
+    "PDF::FillForms::FreeFonts": "lib/PDF/FillForms/FreeFonts.rakumod"
   },
   "resources": [
   ],

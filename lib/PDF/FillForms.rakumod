@@ -1,6 +1,9 @@
-unit class PDF::FillForms;
+unit module PDF::FillForms;
 
 use MacOS::NativeLib "*";
+
+use PDF::FillForms::Class;
+use PDF::FillForms::Data;
 
 sub help is export {
     print qq:to/HERE/;
@@ -59,4 +62,6 @@ sub run(@args) is export {
         say "  $_" for @errs;
         exit;
     }
+
+    my PDF::FillForms::Class @data = read-form-data-file $in, :$debug;
 }

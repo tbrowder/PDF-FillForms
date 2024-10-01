@@ -5,6 +5,11 @@ NAME
 
 **PDF::FillForms** - Provides a process to scan to PDF and overlay it with your own content
 
+Installation
+------------
+
+This module requires system program `pdftk` for using an overlay PDF. Install it on Debian with `sudo aptitude install pdftk` and on MacOS with `brew install pdftk-java`.
+
 SYNOPSIS
 ========
 

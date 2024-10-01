@@ -1,0 +1,14 @@
+use Test;
+
+my @modules = <
+    PDF::FillForms
+    PDF::FillForms::FreeFonts
+    PDF::FillForms::Class
+    PDF::FillForms::Data
+>;
+
+plan @modules.elems;
+
+for @modules {
+    use-ok $_; "Module $_ used okay";
+}

@@ -4,6 +4,12 @@
 
 B<PDF::FillForms> - Provides a process to scan to PDF and overlay it with your own content
 
+=head2 Installation
+
+This module requires system program C<pdftk> for using an overlay PDF.
+Install it on Debian with C<sudo aptitude install pdftk> and on 
+MacOS with C<brew install pdftk-java>.
+
 =head1 SYNOPSIS
 
 =begin code :lang<raku>

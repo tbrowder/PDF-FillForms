@@ -1,4 +1,4 @@
-unit module PDF::FreeFonts;
+unit module PDF::FillForms::FreeFonts;
 
 use PDF::Font::Loader::HarfBuzz;
 use PDF::Font::Loader :load-font;

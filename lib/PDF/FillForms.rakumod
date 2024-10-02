@@ -23,7 +23,7 @@ sub help is export {
 }
 
 # Usage: {$*PROGRAM.basename} form=F in=I out=O
-sub run(@args) is export {
+sub run-args(@args) is export {
     my ($form, $in, $out);
     my $debug = 0;
     my @errs;
@@ -64,4 +64,22 @@ sub run(@args) is export {
     }
 
     my PDF::FillForms::Class @data = read-form-data-file $in, :$debug;
+
+    =begin comment
+    INPDF=myinput.pdf
+    BACKGROUNDPDF=sample-form.pdf
+    OUTPDF=with-watermark.pdf
+    pdftk $INPDF background $BACKGROUNDPDF output $OUTPDF
+    echo See new pdf $OUTPDF
+    =end comment
+
+#    my ($form, $in, $out);
+
+    my $INPDF          = $in;
+    my $BACKGROUNDPDF  = $form;
+    my $OUTPDF         = $out;
+
+    my $proc = run( "pdftk", "$INPDF", "background", "$BACKGROUNDPDF", 
+                    "output", "$OUTPDF" );
+
 }

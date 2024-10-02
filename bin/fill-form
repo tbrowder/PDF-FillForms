@@ -7,6 +7,6 @@ if not @*ARGS.elems {
     help
 }
 else {
-    run @*ARGS
+    run-args @*ARGS
 }
 

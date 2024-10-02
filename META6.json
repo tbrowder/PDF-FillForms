@@ -7,6 +7,10 @@
   ],
   "depends": [
     "MacOS::NativeLib",
+    "PDF::Font::Loader",
+    "PDF::Font::Loader::HarfBuzz",
+    "PDF::Content",
+    "PDF::API",
     "PDF::Lite"
   ],
   "description": "Provides a process to scan to PDF and overlay it with your own content",

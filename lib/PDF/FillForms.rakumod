@@ -4,6 +4,7 @@ use MacOS::NativeLib "*";
 
 use PDF::FillForms::Class;
 use PDF::FillForms::Data;
+use PDF::FillForms::FreeFonts;
 
 sub help is export {
     print qq:to/HERE/;
